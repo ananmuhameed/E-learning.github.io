@@ -1,7 +1,7 @@
 # E-learning Website
 
 ## Languages
- ###HTML
- ###CSS
- ###Typescript
+ HTML
+ CSS
+ Typescript
 
