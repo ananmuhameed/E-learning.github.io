@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "donia-db": {
+      "hosting": {
+        "angular-project": [
+          "donia-db"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "donia-db"
+  }
+}
