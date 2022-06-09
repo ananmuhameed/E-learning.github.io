@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <app-admin-header></app-admin-header>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default box_1">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default box_1">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default box_1">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3" class="ax_default box_1">
+        <div id="u3_div" class=""></div>
+        <div id="u3_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4" class="ax_default box_1">
+        <div id="u4_div" class=""></div>
+        <div id="u4_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5" class="ax_default paragraph">
+        <div id="u5_div" class=""></div>
+        <div id="u5_text" class="text ">
+          <p><span>Add New Course</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6" class="ax_default box_1">
+        <div id="u6_div" class=""></div>
+        <div id="u6_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default box_1">
+        <div id="u7_div" class=""></div>
+        <div id="u7_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u8" class="ax_default box_1">
+        <img id="u8_img" class="img " src="assets/images/newcourse/u8.svg"/>
+        <div id="u8_text" class="text ">
+          <p><span>Course Name:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u9" class="ax_default box_1">
+        <img id="u9_img" class="img " src="assets/images/newcourse/u9.svg"/>
+        <div id="u9_text" class="text ">
+          <p><span>Faculties assigned to the course:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u10" class="ax_default box_1">
+        <img id="u10_img" class="img " src="assets/images/newcourse/u10.svg"/>
+        <div id="u10_text" class="text ">
+          <p><span>Number of Credit Hours:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u11" class="ax_default box_1">
+        <img id="u11_img" class="img " src="assets/images/newcourse/u11.svg"/>
+        <div id="u11_text" class="text ">
+          <p><span>Course Code:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u12" class="ax_default box_1">
+        <img id="u12_img" class="img " src="assets/images/newcourse/u12.svg"/>
+        <div id="u12_text" class="text ">
+          <p><span>Prerequisite courses:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u13" class="ax_default box_1">
+        <img id="u13_img" class="img " src="assets/images/newcourse/u13.svg"/>
+        <div id="u13_text" class="text ">
+          <p><span>Why is it important to take this course?</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u14" class="ax_default placeholder">
+        <!-- <img id="u14_img" class="img " src="assets/images/newcourse/u14.svg"/> -->
+        <div>
+          <input type="text" id="courseName"  name = "courseName"  [(ngModel)]= "course.courseName">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u15" class="ax_default placeholder">
+        <!-- <img id="u15_img" class="img " src="assets/images/newcourse/u15.svg"/> -->
+        <div>
+          <select [(ngModel)]="course.facultiesAssigned" id="faculties">
+            <option *ngFor="let faculty of faculties">
+              {{faculty.facultyName}}
+            </option>
+          </select>
+          
+            <!-- <option *ngFor="let faculty of faculties " [ngValue]="faculty.facultyName" >{{faculty.facultyName}}
+            </option> -->
+          
+          <!-- <input type="text" id="facultiesAssigned"  name = "facultiesAssigned"  [(ngModel)]= "course.facultiesAssigned"> -->
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u16" class="ax_default placeholder">
+        <!-- <img id="u16_img" class="img " src="assets/images/newcourse/u16.svg"/> -->
+        <div>
+          <input type="text" id="creditHours"  name = "creditHours"  [(ngModel)] = "course.creditHours">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u17" class="ax_default placeholder">
+        <!-- <img id="u17_img" class="img " src="assets/images/newcourse/u17.svg"/> -->
+        <div>
+          <input type="text" id="courseCode"  name = "courseCode"  [(ngModel)] = "course.courseCode">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u18" class="ax_default placeholder">
+        <!-- <img id="u18_img" class="img " src="assets/images/newcourse/u18.svg"/> -->
+        <div>
+          <input type="text" id="prerequisiteCourses"  name = "prerequisiteCourses" [(ngModel)]= "course.prerequisiteCourses">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- DeleteStudent (Rectangle) -->
+      <div id="u19">
+        <div></div>
+        <div>
+          <p><button class="button1" (click)="onClick()">Add Course</button></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u20" class="ax_default placeholder">
+        <!-- <img id="u20_img" class="img " src="assets/images/newcourse/u20.svg"/> -->
+        <div id ="course">
+          <input type = "text" id = "whyCourse" name = "whyCourse"  [(ngModel)]= "course.whyCourse">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u21" class="ax_default image">
+        <img *ngIf ="clicked == true" id="u21_img" class="img" [src]="src"/>
+        <img *ngIf ="clicked == false" id="u2_img" class = "img" src ="assets/images/newcourse/u21.svg"/>
+        <div id="u21_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u22" class="ax_default placeholder">
+        <!-- <img id="u22_img" class="img " src="assets/images/newcourse/u22.svg"/> -->
+        <div>
+          <input type="file" class ="input-box" (change)= "upload($event)" accept="*png.jpg.jpeg" id = "" >
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u23" class="ax_default placeholder">
+        <!-- <img id="u23_img" class="img " src="assets/images/newcourse/u23.svg"/> -->
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u24" class="ax_default box_1">
+        <img id="u24_img" class="img " src="assets/images/newcourse/u24.svg"/>
+        <div id="u24_text" class="text ">
+          <p><span>Image File</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

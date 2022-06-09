@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <app-admin-header></app-admin-header>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default paragraph">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p><span>Date Founded</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default paragraph">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text ">
+          <p><span>Faculty Name</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default paragraph">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text ">
+          <p><span>Faculties Information</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3" class="ax_default paragraph">
+        <div id="u3_div" class=""></div>
+        <div id="u3_text" class="text ">
+          <p><span>Number of Courses</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Line) -->
+      <div id="u4" class="ax_default line">
+        <img id="u4_img" class="img " src="assets/images/all_faculties_details/u4.svg"/>
+        <div id="u4_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Line) -->
+      <div id="u5" class="ax_default line">
+        <img id="u5_img" class="img " src="assets/images/all_faculties_details/u4.svg"/>
+        <div id="u5_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u6" class="ax_default placeholder" >
+      <ul>
+        <div *ngFor="let faculty of _faculties" >
+        
+        
+          
+          <li> <p>{{faculty.facultyName}}</p> </li>
+        </div>
+      </ul>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default paragraph">
+        <div id="u7_div" class=""></div>
+        <div id="u7_text" class="text ">
+          <p><span>Number of Students</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u8" class="ax_default placeholder">
+       
+          <ul>
+            <div *ngFor="let faculty of _faculties" >
+            
+            
+              
+              <li> <p>{{faculty.studentsNum}}</p> </li>
+            </div>
+          </ul>
+          </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u9" class="ax_default placeholder">
+    
+        <ul>
+          <div *ngFor="let faculty of _faculties" >
+          
+          
+            
+            <li> <p>{{faculty.dateFounded}}</p> </li>
+          </div>
+        </ul>
+        </div>
+
+      <!-- Unnamed (Placeholder) -->
+      <div id="u10" class="ax_default placeholder">
+        <ul>
+          <div *ngFor="let faculty of _faculties" >
+        
+            
+            <li> <p>{{faculty.courseNum}}</p> </li>
+          </div>
+        </ul>
+        </div>
+
+      <!-- goHomePage (Shape) -->
+      <div id="u11" class="ax_default primary_button" data-label="goHomePage">
+        <img id="u11_img" class="img " src="assets/images/all_faculties_details/gohomepage_u11.svg"/>
+
+        <div>
+          <ul>
+            <div *ngFor="let faculty of _faculties" >
+          
+              
+              <li>   <p [routerLink] = "['/faculty-details/', faculty.id]"><span style="text-decoration:underline ;">More Details</span></p> </li>
+            </div>
+          </ul>
+          
+         
+        
+        </div>
+
+      </div>
+
+      <!-- Predictive Search (Group) -->
+      <div id="u12" class="ax_default" data-label="Predictive Search" data-left="832" data-top="141" data-width="350" data-height="40">
+
+        <!-- Search Input (Text Field)
+        <div id="u13" class="ax_default text_field" data-label="Search Input">
+          <div id="u13_div" class=""></div>
+          <input id="u13_input" type="text" value="" class="u13_input"/>
+        </div> -->
+
+        <!-- Search (Shape)
+        <div id="u14" class="ax_default icon" data-label="Search">
+          <img id="u14_img" class="img " src="assets/images/all_faculties_details/search_u14.svg"/>
+          <div id="u14_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div> -->
+
+        <!-- Search Results (Repeater) -->
+        <div id="u15" class="ax_default ax_default_hidden" data-label="Search Results" style="display:none; visibility: hidden">
+          <script id="u15_script" type="axure-repeater-template" data-label="Search Results">
+
+             <!-- Search Result (Rectangle) -->
+
+             <div id="u16" class="ax_default box_1 u16" data-label="Search Result">
+              <div id="u16_div" class="u16_div"></div>
+              <div id="u16_text" class="text u16_text" style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div> 
+          </script>
+          <div id="u15-1" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-1" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-1_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-1_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Classic Awesome Red</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-2" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-2" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-2_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-2_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Classic Awesome Green</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-3" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-3" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-3_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-3_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Classic Awesome Blue</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-4" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-4" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-4_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-4_text" class="text u16_text" style="visibility: inherit">
+                <p><span>New Release Small</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-5" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-5" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-5_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-5_text" class="text u16_text" style="visibility: inherit">
+                <p><span>New Release Medium</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-6" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-6" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-6_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-6_text" class="text u16_text" style="visibility: inherit">
+                <p><span>New Release Large</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-7" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-7" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-7_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-7_text" class="text u16_text" style="visibility: inherit">
+                <p><span>New Release Extra Large</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-8" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-8" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-8_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-8_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Bonus Extra Part One</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-9" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-9" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-9_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-9_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Bouns Extra Part Two</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="u15-10" class="preeval" style="width: 350px; height: 50px;">
+
+            <!-- Search Result (Rectangle) -->
+            <div id="u16-10" class="ax_default box_1 u16" data-label="Search Result" style="width: 350px; height: 50px; left: 0px; top: 0px;visibility: inherit">
+              <div id="u16-10_div" class="u16_div" style="width: 350px; height: 50px;visibility: inherit"></div>
+              <div id="u16-10_text" class="text u16_text" style="visibility: inherit">
+                <p><span>Bonus Extra Part Three</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clear (Shape) -->
+        <div id="u17" class="ax_default icon ax_default_hidden" data-label="Clear" style="display:none; visibility: hidden">
+          <img id="u17_img" class="img " src="assets/images/all_faculties_details/clear_u17.svg"/>
+          <div id="u17_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- <router-outlet></router-outlet> -->
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<app-student-header></app-student-header>
+<body>
+
+  
+ 
+  <h1 id="main-header"><span>Current Courses</span></h1>
+
+
+
+  <div class="grid-container">
+    <div *ngFor="let course of courses">
+    <div class="course" >
+      <div class="course-details"> 
+        <h1 class="course-name">{{course.courseName}}</h1>
+        <hr>
+        <p> Course Code: <span>{{course.courseCode}}</span></p>
+        <p> Credit Hourse: <span>{{course.creditHours}}</span></p>
+        <p> Prerequisit Courses: <span>{{course.prerequisiteCourses}}</span></p>
+        <h2> Why this course? </h2>
+        <h3>{{course.whyCourse}}</h3>
+        <button id="more" class="btn">Tap for more</button>
+        <button id="enroll" (click)="Enroll(course.courseCode, student.name, course.courseName, course.coursePrimaryKey)" class="btn">Enroll</button>
+      </div>
+      <img src="http://www.mycslab.in/wp-content/uploads/2020/01/1214005f6e5f8cf0b48bc88f70dc3e7a-rimg-w2560-h1440-gmir-1024x576.jpg"/>
+    </div>
+    </div>
+  </div>
+
+
+</body>
+<app-available-courses></app-available-courses>
+</html>

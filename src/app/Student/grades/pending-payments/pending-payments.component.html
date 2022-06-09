@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u0" class="ax_default">
+        <div id="u0_state0" class="panel_state" data-label="State2" style="">
+          <div id="u0_state0_content" class="panel_state_content">
+
+            <!-- paymentMethods (Rectangle) -->
+            <div id="u1" class="ax_default primary_button" data-label="paymentMethods">
+              <div id="u1_div" class=""></div>
+              <div id="u1_text" class="text ">
+                <p (click)="methodbutton()" style="text-align: center;"><span>Payment Methods</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u0_state1" class="panel_state" data-label="State1" style="visibility: hidden;">
+          <div id="u0_state1_content" class="panel_state_content">
+
+            <!-- paymentMethods (Rectangle) -->
+            <div id="u2" class="ax_default primary_button" data-label="paymentMethods">
+              <div id="u2_div" class=""></div>
+              <div id="u2_text" class="text ">
+                <p><span>Payment Methods</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u3" class="ax_default">
+        <div id="u3_state0" class="panel_state" data-label="State1" style="">
+          <div id="u3_state0_content" class="panel_state_content">
+
+            <!-- pendingPayments (Rectangle) -->
+            <div id="u4" class="ax_default primary_button" data-label="pendingPayments">
+              <div id="u4_div" class=""></div>
+              <div id="u4_text" class="text ">
+                <p (click)="pendingbutton()" style="text-align: center;"><span>Pending Payments</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u3_state1" class="panel_state" data-label="State2" style="visibility: hidden;">
+          <div id="u3_state1_content" class="panel_state_content">
+
+            <!-- pendingPayments (Rectangle) -->
+            <div id="u5" class="ax_default primary_button" data-label="pendingPayments">
+              <div id="u5_div" class=""></div>
+              <div id="u5_text" class="text ">
+                <p><span>Pending Payments</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pendingpayments" *ngIf="showpending">
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6" class="ax_default paragraph ax_default_hidden" style="">
+        <div id="u6_div" class=""></div>
+        <div id="u6_text" class="text ">
+          <p><span>No Payments to Pay</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default paragraph ax_default_hidden" style="">
+        <div id="u7_div" class=""></div>
+        <div id="u7_text" class="text ">
+          <p><span>No Payments to pay for now</span></p>
+        </div>
+      </div>
+
+      <!-- goHomePage (Rectangle) -->
+      <div id="u8" class="ax_default primary_button ax_default_hidden" data-label="goHomePage" style="">
+        <div id="u8_div" class=""></div>
+        <div id="u8_text" class="text ">
+          <p style="text-align:center ;"><span>Go Back to Home Page</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- card (Dynamic Panel) -->
+    <div *ngIf="showcard" id="u9" class="ax_default ax_default_hidden" data-label="card" style="">
+      <div id="u9_state0" class="panel_state" data-label="State1" style="">
+        <div id="u9_state0_content" class="panel_state_content">
+          
+            <!-- Unnamed (Rectangle) -->
+            <div id="u10" class="ax_default box_2">
+              <div id="u10_div" class=""></div>
+              <div id="u10_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- payPendingPayments (Rectangle) -->
+            <div id="u11" class="ax_default primary_button" data-label="payPendingPayments">
+              <div id="u11_div" class=""></div>
+              <div id="u11_text" class="text ">
+                <p><span>Credit / Debit&nbsp; Card</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Vertical Line) -->
+            <div id="u12" class="ax_default line">
+              <img id="u12_img" class="img " src="images/pending_payment/u12.svg"/>
+              <div id="u12_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u13" class="ax_default paragraph">
+              <div id="u13_div" class=""></div>
+              <div id="u13_text" class="text ">
+                <p><span>Name on card</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u14" class="ax_default box_1">
+              <div id="u14_div" class=""></div>
+              <div id="u14_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u15" class="ax_default text_field">
+              <div id="u15_div" class=""></div>
+              <input id="u15_input" type="text" value="" class="u15_input"/>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u16" class="ax_default paragraph">
+              <div id="u16_div" class=""></div>
+              <div id="u16_text" class="text ">
+                <p><span>Debit / Credit card number</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u17" class="ax_default box_1">
+              <div id="u17_div" class=""></div>
+              <div id="u17_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u18" class="ax_default text_field">
+              <div id="u18_div" class=""></div>
+              <input id="u18_input" type="text" value="" class="u18_input" maxlength="4"/>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u19" class="ax_default text_field">
+              <div id="u19_div" class=""></div>
+              <input id="u19_input" type="text" value="" class="u19_input" maxlength="4"/>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u20" class="ax_default text_field">
+              <div id="u20_div" class=""></div>
+              <input id="u20_input" type="text" value="" class="u20_input" maxlength="4"/>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u21" class="ax_default text_field">
+              <div id="u21_div" class=""></div>
+              <input id="u21_input" type="text" value="" class="u21_input" maxlength="4"/>
+            </div>
+
+            <!-- Unnamed (Shape) -->
+            <div id="u22" class="ax_default icon">
+              <img id="u22_img" class="img " src="images/pending_payment/u22.svg"/>
+              <div id="u22_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u23" class="ax_default paragraph">
+              <div id="u23_div" class=""></div>
+              <div id="u23_text" class="text ">
+                <p><span>Valid thru</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u24" class="ax_default box_1">
+              <div id="u24_div" class=""></div>
+              <div id="u24_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u25" class="ax_default text_field">
+              <div id="u25_div" class=""></div>
+              <input id="u25_input" type="text" value="" class="u25_input" maxlength="2"/>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u26" class="ax_default paragraph">
+              <div id="u26_div" class=""></div>
+              <div id="u26_text" class="text ">
+                <p><span>/</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u27" class="ax_default text_field">
+              <div id="u27_div" class=""></div>
+              <input id="u27_input" type="text" value="" class="u27_input" maxlength="2"/>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u28" class="ax_default paragraph">
+              <div id="u28_div" class=""></div>
+              <div id="u28_text" class="text ">
+                <p><span>CVV</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u29" class="ax_default box_1">
+              <div id="u29_div" class=""></div>
+              <div id="u29_text" class="text " style="">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Text Field) -->
+            <div id="u30" class="ax_default text_field">
+              <div id="u30_div" class=""></div>
+              <input id="u30_input" type="text" value="" class="u30_input" maxlength="3"/>
+            </div>
+
+            <!-- payPendingPayments (Rectangle) -->
+            <div id="u31" class="ax_default primary_button" data-label="payPendingPayments">
+              <div id="u31_div" class=""></div>
+              <div id="u31_text" class="text ">
+                <p style="text-align:center ;"><span>Pay</span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      <!-- Unnamed (Dynamic Panel) -->
+      <div *ngIf="showmethod" id="u32" class="ax_default">
+        <div id="u32_state0" class="panel_state" data-label="State1" style="">
+          <div id="u32_state0_content" class="panel_state_content">
+
+            <!-- paymentMethods (Rectangle) -->
+            <div  id="u33" class="ax_default primary_button" data-label="paymentMethods">
+              <div id="u33_div" class=""></div>
+              <div id="u33_text" class="text ">
+                <p style="text-align: center;" (click)="paybutton()"><span>Pay Pending Payments</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u32_state1" class="panel_state" data-label="State2" style="visibility: hidden;">
+          <div id="u32_state1_content" class="panel_state_content">
+
+            <!-- paymentMethods (Rectangle) -->
+            <div id="u34" class="ax_default primary_button" data-label="paymentMethods">
+              <div id="u34_div" class=""></div>
+              <div id="u34_text" class="text ">
+                <p><span>Pay Pending Payments</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
